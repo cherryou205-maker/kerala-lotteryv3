@@ -1,0 +1,1255 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kerala Sarkari Lottery – Official VIP Booking</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700;900&family=Tiro+Devanagari+Hindi&family=Space+Mono:wght@400;700&display=swap');
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --crimson: #8B0000;
+  --crimson2: #C41E3A;
+  --gold: #C9A84C;
+  --gold2: #F0D060;
+  --gold3: #FFE97F;
+  --ivory: #FFF8E7;
+  --deep: #0D0806;
+  --panel: #150F0A;
+  --panel2: #1F1610;
+  --muted: rgba(255,240,200,0.55);
+  --green: #1DB954;
+  --border: rgba(201,168,76,0.35);
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: 'Space Mono', monospace;
+  background: #0D0806;
+  color: var(--ivory);
+  min-height: 100vh;
+  overflow-x: hidden;
+  position: relative;
+}
+
+/* ── Mandala BG ── */
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background:
+    radial-gradient(circle at 50% 0%, rgba(139,0,0,0.18) 0%, transparent 60%),
+    radial-gradient(circle at 10% 80%, rgba(201,168,76,0.06) 0%, transparent 50%),
+    radial-gradient(circle at 90% 80%, rgba(201,168,76,0.06) 0%, transparent 50%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.mandala-bg {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 700px;
+  height: 700px;
+  opacity: 0.03;
+  animation: rotateSlow 60s linear infinite;
+  pointer-events: none;
+  z-index: 0;
+}
+@keyframes rotateSlow { to { transform: translate(-50%, -50%) rotate(360deg); } }
+
+.page {
+  position: relative;
+  z-index: 1;
+  max-width: 480px;
+  margin: 0 auto;
+  padding: 0 12px 90px;
+}
+
+/* ── TOP BANNER ── */
+.top-banner {
+  background: linear-gradient(90deg, var(--crimson) 0%, #6B0000 50%, var(--crimson) 100%);
+  text-align: center;
+  padding: 7px 12px;
+  font-size: 10px;
+  letter-spacing: 2.5px;
+  color: var(--gold2);
+  font-weight: 700;
+  text-transform: uppercase;
+  border-bottom: 1px solid var(--gold);
+  animation: marquee-glow 3s ease infinite;
+}
+@keyframes marquee-glow {
+  0%,100% { box-shadow: 0 2px 12px rgba(139,0,0,0.5); }
+  50% { box-shadow: 0 2px 20px rgba(196,30,58,0.8); }
+}
+
+/* ── HEADER ── */
+.header {
+  text-align: center;
+  padding: 22px 0 10px;
+  position: relative;
+}
+
+.ashoka-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  margin-bottom: 10px;
+}
+
+.side-deco {
+  width: 50px;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, var(--gold), transparent);
+  position: relative;
+}
+.side-deco::before {
+  content: '✦';
+  position: absolute;
+  top: -6px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: var(--gold);
+  font-size: 10px;
+}
+
+.emblem-ring {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  border: 2px solid var(--gold);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+  background: radial-gradient(circle, #2a1500, #150F0A);
+  box-shadow: 0 0 0 1px rgba(201,168,76,0.2), 0 0 30px rgba(201,168,76,0.1);
+  animation: ring-pulse 3s ease infinite;
+}
+@keyframes ring-pulse {
+  0%,100% { box-shadow: 0 0 0 1px rgba(201,168,76,0.2), 0 0 20px rgba(201,168,76,0.1); }
+  50% { box-shadow: 0 0 0 3px rgba(201,168,76,0.15), 0 0 40px rgba(201,168,76,0.2); }
+}
+
+.brand-name {
+  font-family: 'Cinzel Decorative', serif;
+  font-size: 15px;
+  font-weight: 900;
+  letter-spacing: 2px;
+  background: linear-gradient(180deg, var(--gold3) 0%, var(--gold2) 40%, var(--gold) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  line-height: 1.3;
+  margin-bottom: 4px;
+}
+
+.brand-sub {
+  font-size: 9px;
+  letter-spacing: 4px;
+  color: var(--muted);
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+.live-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  background: rgba(139,0,0,0.7);
+  border: 1px solid var(--crimson2);
+  border-radius: 20px;
+  padding: 4px 14px;
+  font-size: 10px;
+  letter-spacing: 2px;
+  color: #FF8080;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.live-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--crimson2);
+  animation: blink 1s step-end infinite;
+}
+@keyframes blink { 0%,100%{opacity:1} 50%{opacity:0} }
+
+/* ── DIVIDER ── */
+.ornament-divider {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 12px 0;
+}
+.ornament-divider::before,
+.ornament-divider::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--gold), transparent);
+}
+.ornament-center {
+  color: var(--gold);
+  font-size: 14px;
+}
+
+/* ── JACKPOT CARD ── */
+.jackpot-card {
+  background: linear-gradient(145deg, #1F0E02, #150A00, #1F0E02);
+  border: 1px solid var(--gold);
+  border-radius: 4px 24px 4px 24px;
+  padding: 20px 16px;
+  text-align: center;
+  margin: 12px 0;
+  position: relative;
+  overflow: hidden;
+}
+.jackpot-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: repeating-linear-gradient(
+    45deg,
+    rgba(201,168,76,0.02) 0px,
+    rgba(201,168,76,0.02) 1px,
+    transparent 1px,
+    transparent 8px
+  );
+}
+.jackpot-card .corner {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-color: var(--gold2);
+  border-style: solid;
+  opacity: 0.7;
+}
+.corner.tl { top: 8px; left: 8px; border-width: 2px 0 0 2px; }
+.corner.tr { top: 8px; right: 8px; border-width: 2px 2px 0 0; }
+.corner.bl { bottom: 8px; left: 8px; border-width: 0 0 2px 2px; }
+.corner.br { bottom: 8px; right: 8px; border-width: 0 2px 2px 0; }
+
+.prize-eyebrow {
+  font-size: 9px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 4px;
+}
+.prize-amount {
+  font-family: 'Cinzel Decorative', serif;
+  font-size: 38px;
+  font-weight: 900;
+  background: linear-gradient(180deg, #FFE97F 0%, #C9A84C 60%, #8B6914 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  line-height: 1;
+  margin: 6px 0 2px;
+  animation: shimmer-gold 3s ease infinite;
+  background-size: 200% auto;
+}
+@keyframes shimmer-gold {
+  0%{ background-position: 0% center; }
+  50%{ background-position: 100% center; }
+  100%{ background-position: 0% center; }
+}
+.prize-label-main {
+  font-size: 10px;
+  letter-spacing: 3px;
+  color: var(--gold);
+  text-transform: uppercase;
+  margin-bottom: 14px;
+}
+
+.prize-tiers {
+  display: flex;
+  gap: 6px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.tier {
+  background: rgba(201,168,76,0.07);
+  border: 1px solid rgba(201,168,76,0.25);
+  border-radius: 8px;
+  padding: 6px 10px;
+  text-align: center;
+}
+.tier .t-prize { font-size: 12px; font-weight: 700; color: var(--gold2); }
+.tier .t-label { font-size: 9px; color: var(--muted); margin-top: 2px; letter-spacing: 1px; }
+
+/* ── DRAW INFO ── */
+.draw-info-row {
+  display: flex;
+  gap: 8px;
+  margin: 10px 0;
+}
+.draw-info-box {
+  flex: 1;
+  background: var(--panel2);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+}
+.draw-info-box .dib-label { font-size: 9px; letter-spacing: 2px; color: var(--muted); text-transform: uppercase; }
+.draw-info-box .dib-value { font-size: 14px; font-weight: 700; color: var(--gold2); margin-top: 3px; }
+
+/* ── TIMER ── */
+.timer-wrap {
+  background: var(--panel);
+  border: 1px solid rgba(196,30,58,0.4);
+  border-radius: 12px;
+  padding: 12px 16px;
+  margin: 10px 0;
+}
+.timer-head {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 9px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #FF8080;
+  margin-bottom: 10px;
+}
+.timer-boxes {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+}
+.tbox {
+  background: linear-gradient(180deg, #1a0a0a, #0d0504);
+  border: 1px solid rgba(196,30,58,0.5);
+  border-radius: 8px;
+  padding: 10px 14px;
+  text-align: center;
+  min-width: 58px;
+}
+.tbox .num {
+  font-family: 'Space Mono', monospace;
+  font-size: 28px;
+  font-weight: 700;
+  color: #FF8080;
+  line-height: 1;
+  display: block;
+}
+.tbox .unit { font-size: 9px; color: var(--muted); letter-spacing: 2px; margin-top: 4px; display: block; }
+.t-colon { font-size: 22px; color: rgba(196,30,58,0.6); animation: blink 1s step-end infinite; }
+
+/* ── SECTION TITLE ── */
+.sec-title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 9px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--gold);
+  font-weight: 700;
+  margin: 14px 0 8px;
+}
+.sec-title::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(90deg, var(--border), transparent);
+}
+
+/* ── TICKET SECTION ── */
+.ticket-section {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 14px 12px;
+  margin: 8px 0;
+}
+
+.status-bar {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.status-pill {
+  background: rgba(201,168,76,0.08);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 4px 10px;
+  font-size: 10px;
+  color: var(--gold);
+}
+
+.search-wrap {
+  position: relative;
+  margin-bottom: 8px;
+}
+.search-icon {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 14px;
+  opacity: 0.5;
+}
+.search-box {
+  width: 100%;
+  background: rgba(255,255,255,0.04);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 9px 14px 9px 36px;
+  font-size: 13px;
+  font-family: 'Space Mono', monospace;
+  color: var(--ivory);
+  outline: none;
+  transition: border-color 0.25s;
+  letter-spacing: 1px;
+}
+.search-box::placeholder { color: rgba(255,240,200,0.25); font-size: 11px; }
+.search-box:focus { border-color: var(--gold); }
+
+/* ── TICKET GRID ── */
+.ticket-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5px;
+  max-height: 340px;
+  overflow-y: auto;
+  padding: 2px;
+}
+.ticket-grid::-webkit-scrollbar { width: 3px; }
+.ticket-grid::-webkit-scrollbar-track { background: transparent; }
+.ticket-grid::-webkit-scrollbar-thumb { background: rgba(201,168,76,0.3); border-radius: 4px; }
+
+/* ── TICKET CARD ── */
+.ticket {
+  background: linear-gradient(160deg, #1A1208, #120D06);
+  border: 1px solid rgba(201,168,76,0.18);
+  border-radius: 8px;
+  padding: 8px 4px 6px;
+  cursor: pointer;
+  text-align: center;
+  transition: all 0.15s ease;
+  position: relative;
+  user-select: none;
+}
+.ticket::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 8px;
+  background: linear-gradient(135deg, rgba(201,168,76,0.05), transparent);
+  opacity: 0;
+  transition: opacity 0.15s;
+}
+.ticket:hover { border-color: rgba(201,168,76,0.55); transform: scale(1.04); }
+.ticket:hover::before { opacity: 1; }
+.ticket .t-lotus { font-size: 14px; display: block; line-height: 1; margin-bottom: 3px; }
+.ticket .t-num {
+  font-size: 9.5px;
+  font-weight: 700;
+  color: var(--muted);
+  letter-spacing: 0.5px;
+  display: block;
+}
+.ticket.hidden { display: none; }
+
+.ticket.selected {
+  background: linear-gradient(160deg, #2D1A00, #1A0F00);
+  border-color: var(--gold);
+  transform: scale(1.05);
+  box-shadow: 0 0 14px rgba(201,168,76,0.25), inset 0 0 8px rgba(201,168,76,0.08);
+}
+.ticket.selected .t-num { color: var(--gold2); }
+.ticket.selected::after {
+  content: '✓';
+  position: absolute;
+  top: 2px;
+  right: 5px;
+  font-size: 8px;
+  color: var(--green);
+  font-weight: 900;
+}
+
+/* ── CHIPS ── */
+.chips-area {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin: 8px 0 4px;
+  min-height: 8px;
+}
+.chip {
+  background: rgba(201,168,76,0.1);
+  border: 1px solid rgba(201,168,76,0.3);
+  border-radius: 6px;
+  padding: 3px 8px;
+  font-size: 10px;
+  color: var(--gold2);
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-family: 'Space Mono', monospace;
+}
+.chip-x {
+  cursor: pointer;
+  color: #FF8080;
+  font-size: 11px;
+  line-height: 1;
+  opacity: 0.8;
+}
+.chip-x:hover { opacity: 1; }
+
+/* ── WARNING ── */
+.min-warn {
+  display: none;
+  background: rgba(139,0,0,0.12);
+  border: 1px dashed rgba(196,30,58,0.5);
+  border-radius: 8px;
+  padding: 8px 12px;
+  font-size: 11px;
+  color: #FF8080;
+  text-align: center;
+  margin: 6px 0;
+}
+@keyframes shake {
+  0%,100%{ transform: translateX(0); }
+  20%{ transform: translateX(-5px); }
+  60%{ transform: translateX(5px); }
+}
+
+/* ── SUMMARY ── */
+.summary-card {
+  background: var(--panel2);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 14px 16px;
+  margin: 10px 0;
+}
+.sum-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6px 0;
+  border-bottom: 1px solid rgba(255,255,255,0.04);
+  font-size: 12px;
+}
+.sum-row:last-child { border-bottom: none; }
+.sum-row .s-label { color: var(--muted); }
+.sum-row .s-val { font-weight: 700; color: var(--ivory); }
+.sum-row.total-row { padding-top: 10px; margin-top: 4px; border-top: 1px solid var(--border); }
+.sum-row.total-row .s-label { color: var(--gold); font-size: 13px; font-weight: 700; }
+.sum-row.total-row .s-val { color: var(--gold2); font-size: 20px; font-weight: 700; font-family: 'Cinzel Decorative', serif; }
+
+/* ── WHATSAPP BUTTON ── */
+.wa-btn-wrap { margin: 14px 0; }
+.wa-btn {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 16px;
+  background: linear-gradient(135deg, #075E54 0%, #128C7E 40%, #25D366 70%, #128C7E 100%);
+  background-size: 200% auto;
+  border: none;
+  border-radius: 12px 4px 12px 4px;
+  color: #fff;
+  font-family: 'Space Mono', monospace;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  cursor: pointer;
+  transition: all 0.3s;
+  box-shadow: 0 6px 28px rgba(37,211,102,0.25);
+  animation: wa-pulse 2.5s ease infinite;
+  text-transform: uppercase;
+}
+@keyframes wa-pulse {
+  0%,100% { box-shadow: 0 6px 28px rgba(37,211,102,0.25); background-position: 0% center; }
+  50% { box-shadow: 0 6px 40px rgba(37,211,102,0.45); background-position: 100% center; }
+}
+.wa-btn:active { transform: scale(0.98); }
+.wa-icon { font-size: 22px; }
+
+/* ── TRUST ROW ── */
+.trust-row {
+  display: flex;
+  gap: 6px;
+  justify-content: center;
+  margin: 10px 0;
+}
+.trust-item {
+  flex: 1;
+  background: var(--panel2);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 8px 4px;
+  text-align: center;
+  font-size: 9.5px;
+  color: var(--muted);
+  letter-spacing: 0.5px;
+}
+.trust-item .ti-icon { font-size: 16px; display: block; margin-bottom: 4px; }
+
+/* ── PAYMENT ── */
+.payment-row {
+  display: flex;
+  gap: 6px;
+  justify-content: center;
+  margin: 8px 0;
+}
+.pay-badge {
+  background: rgba(201,168,76,0.06);
+  border: 1px solid rgba(201,168,76,0.2);
+  border-radius: 8px;
+  padding: 6px 12px;
+  font-size: 11px;
+  color: var(--gold);
+  font-weight: 700;
+}
+
+/* ── NOTICE ── */
+.notice-box {
+  background: rgba(139,0,0,0.08);
+  border-left: 3px solid var(--crimson2);
+  border-radius: 0 8px 8px 0;
+  padding: 10px 14px;
+  font-size: 11px;
+  color: var(--muted);
+  line-height: 1.6;
+  margin: 12px 0;
+}
+
+/* ── FOOTER ── */
+.footer {
+  text-align: center;
+  font-size: 9px;
+  color: rgba(255,240,200,0.25);
+  letter-spacing: 2px;
+  padding: 16px 0 0;
+  text-transform: uppercase;
+}
+
+/* ── CONFETTI ── */
+#confetti { position: fixed; inset: 0; pointer-events: none; z-index: 9999; overflow: hidden; }
+@keyframes fall {
+  0% { transform: translateY(-10px) rotate(0deg); opacity: 1; }
+  100% { transform: translateY(100vh) rotate(540deg); opacity: 0; }
+}
+</style>
+</head>
+<body>
+
+<!-- Mandala BG SVG -->
+<svg class="mandala-bg" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <circle cx="100" cy="100" r="95" stroke="#C9A84C" stroke-width="0.5"/>
+  <circle cx="100" cy="100" r="80" stroke="#C9A84C" stroke-width="0.3"/>
+  <circle cx="100" cy="100" r="60" stroke="#C9A84C" stroke-width="0.5"/>
+  <circle cx="100" cy="100" r="40" stroke="#C9A84C" stroke-width="0.3"/>
+  <line x1="5" y1="100" x2="195" y2="100" stroke="#C9A84C" stroke-width="0.3"/>
+  <line x1="100" y1="5" x2="100" y2="195" stroke="#C9A84C" stroke-width="0.3"/>
+  <line x1="30" y1="30" x2="170" y2="170" stroke="#C9A84C" stroke-width="0.3"/>
+  <line x1="170" y1="30" x2="30" y2="170" stroke="#C9A84C" stroke-width="0.3"/>
+  <polygon points="100,10 118,55 165,55 128,83 142,128 100,102 58,128 72,83 35,55 82,55" stroke="#C9A84C" stroke-width="0.5" fill="none"/>
+  <circle cx="100" cy="100" r="15" stroke="#C9A84C" stroke-width="0.5"/>
+</svg>
+
+<div id="confetti"></div>
+
+<!-- TOP BANNER -->
+<div class="top-banner">🔱 Kerala Rajya Lottery — Sarkari VIP Booking Portal 🔱</div>
+
+<div class="page">
+
+  <!-- HEADER -->
+  <div class="header">
+    <div class="ashoka-row">
+      <div class="side-deco"></div>
+      <div class="emblem-ring">🪷</div>
+      <div class="side-deco" style="transform:scaleX(-1)"></div>
+    </div>
+    <div class="brand-name">Kerala Government<br>Lottery</div>
+    <div class="brand-sub">Official Authorized Booking</div>
+    <div class="live-pill">
+      <div class="live-dot"></div>
+      Live Draw — Abhi Book Karein
+    </div>
+  </div>
+
+  <!-- ORNAMENT -->
+  <div class="ornament-divider"><span class="ornament-center">⬦ ✦ ⬦</span></div>
+
+  <!-- JACKPOT CARD -->
+  <div class="jackpot-card">
+    <div class="corner tl"></div>
+    <div class="corner tr"></div>
+    <div class="corner bl"></div>
+    <div class="corner br"></div>
+    <div class="prize-eyebrow">🏆 First Prize — Mukhya Inaam</div>
+    <div class="prize-amount">₹80 Lakh</div>
+    <div class="prize-label-main">Guaranteed Government Prize</div>
+    <div class="prize-tiers">
+      <div class="tier"><div class="t-prize">₹5L</div><div class="t-label">2nd Prize</div></div>
+      <div class="tier"><div class="t-prize">₹1L</div><div class="t-label">3rd Prize</div></div>
+      <div class="tier"><div class="t-prize">₹5,000</div><div class="t-label">4th Prize</div></div>
+      <div class="tier"><div class="t-prize">₹2,000</div><div class="t-label">5th Prize</div></div>
+    </div>
+  </div>
+
+  <!-- DRAW INFO -->
+  <div class="draw-info-row">
+    <div class="draw-info-box">
+      <div class="dib-label">Draw Date</div>
+      <div class="dib-value">📅 14 May 2026</div>
+    </div>
+    <div class="draw-info-box">
+      <div class="dib-label">Ticket Price</div>
+      <div class="dib-value">₹40 / Ticket</div>
+    </div>
+    <div class="draw-info-box">
+      <div class="dib-label">Series</div>
+      <div class="dib-value">KL Series</div>
+    </div>
+  </div>
+
+  <!-- TIMER -->
+  <div class="timer-wrap">
+    <div class="timer-head">
+      <div class="live-dot"></div>
+      DRAW MEIN BACHA SAMAY
+    </div>
+    <div class="timer-boxes">
+      <div class="tbox">
+        <span class="num" id="t-h">00</span>
+        <span class="unit">GHANTE</span>
+      </div>
+      <span class="t-colon">:</span>
+      <div class="tbox">
+        <span class="num" id="t-m">14</span>
+        <span class="unit">MINUTE</span>
+      </div>
+      <span class="t-colon">:</span>
+      <div class="tbox">
+        <span class="num" id="t-s">59</span>
+        <span class="unit">SECOND</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ORNAMENT -->
+  <div class="ornament-divider"><span class="ornament-center">⬦ ✦ ⬦</span></div>
+
+  <!-- TICKET SECTION -->
+  <div class="sec-title">🎟 VIP Tickets Select Karein</div>
+
+  <div class="ticket-section">
+    <div class="status-bar">
+      <div class="status-pill" id="badgeTotal">📋 Total: 431</div>
+      <div class="status-pill" id="badgeSel">✅ Chune: 0</div>
+    </div>
+
+    <div class="search-wrap">
+      <span class="search-icon">🔍</span>
+      <input type="text" class="search-box" id="searchBox" placeholder="Ticket number dhundhen..." oninput="filterTickets()">
+    </div>
+
+    <!-- TICKET GRID — ALL HARDCODED -->
+    <div class="ticket-grid" id="ticketGrid">
+
+<div class="ticket" onclick="tog(this,'KL987820')" data-num="KL987820"><span class="t-lotus">🪷</span><span class="t-num">KL987820</span></div>
+<div class="ticket" onclick="tog(this,'KL987841')" data-num="KL987841"><span class="t-lotus">🪷</span><span class="t-num">KL987841</span></div>
+<div class="ticket" onclick="tog(this,'KL987862')" data-num="KL987862"><span class="t-lotus">🪷</span><span class="t-num">KL987862</span></div>
+<div class="ticket" onclick="tog(this,'KL987876')" data-num="KL987876"><span class="t-lotus">🪷</span><span class="t-num">KL987876</span></div>
+<div class="ticket" onclick="tog(this,'KL987102')" data-num="KL987102"><span class="t-lotus">🪷</span><span class="t-num">KL987102</span></div>
+<div class="ticket" onclick="tog(this,'KL987123')" data-num="KL987123"><span class="t-lotus">🪷</span><span class="t-num">KL987123</span></div>
+<div class="ticket" onclick="tog(this,'KL987821')" data-num="KL987821"><span class="t-lotus">🪷</span><span class="t-num">KL987821</span></div>
+<div class="ticket" onclick="tog(this,'KL987842')" data-num="KL987842"><span class="t-lotus">🪷</span><span class="t-num">KL987842</span></div>
+<div class="ticket" onclick="tog(this,'KL987863')" data-num="KL987863"><span class="t-lotus">🪷</span><span class="t-num">KL987863</span></div>
+<div class="ticket" onclick="tog(this,'KL987883')" data-num="KL987883"><span class="t-lotus">🪷</span><span class="t-num">KL987883</span></div>
+<div class="ticket" onclick="tog(this,'KL987103')" data-num="KL987103"><span class="t-lotus">🪷</span><span class="t-num">KL987103</span></div>
+<div class="ticket" onclick="tog(this,'KL987124')" data-num="KL987124"><span class="t-lotus">🪷</span><span class="t-num">KL987124</span></div>
+<div class="ticket" onclick="tog(this,'KL248918')" data-num="KL248918"><span class="t-lotus">🪷</span><span class="t-num">KL248918</span></div>
+<div class="ticket" onclick="tog(this,'KL074252')" data-num="KL074252"><span class="t-lotus">🪷</span><span class="t-num">KL074252</span></div>
+<div class="ticket" onclick="tog(this,'KL949345')" data-num="KL949345"><span class="t-lotus">🪷</span><span class="t-num">KL949345</span></div>
+<div class="ticket" onclick="tog(this,'KL716637')" data-num="KL716637"><span class="t-lotus">🪷</span><span class="t-num">KL716637</span></div>
+<div class="ticket" onclick="tog(this,'KL332233')" data-num="KL332233"><span class="t-lotus">🪷</span><span class="t-num">KL332233</span></div>
+<div class="ticket" onclick="tog(this,'KL912802')" data-num="KL912802"><span class="t-lotus">🪷</span><span class="t-num">KL912802</span></div>
+<div class="ticket" onclick="tog(this,'KL675249')" data-num="KL675249"><span class="t-lotus">🪷</span><span class="t-num">KL675249</span></div>
+<div class="ticket" onclick="tog(this,'KL817262')" data-num="KL817262"><span class="t-lotus">🪷</span><span class="t-num">KL817262</span></div>
+<div class="ticket" onclick="tog(this,'KL479630')" data-num="KL479630"><span class="t-lotus">🪷</span><span class="t-num">KL479630</span></div>
+<div class="ticket" onclick="tog(this,'KL944274')" data-num="KL944274"><span class="t-lotus">🪷</span><span class="t-num">KL944274</span></div>
+<div class="ticket" onclick="tog(this,'KL618322')" data-num="KL618322"><span class="t-lotus">🪷</span><span class="t-num">KL618322</span></div>
+<div class="ticket" onclick="tog(this,'KL454216')" data-num="KL454216"><span class="t-lotus">🪷</span><span class="t-num">KL454216</span></div>
+<div class="ticket" onclick="tog(this,'KL161202')" data-num="KL161202"><span class="t-lotus">🪷</span><span class="t-num">KL161202</span></div>
+<div class="ticket" onclick="tog(this,'KL526324')" data-num="KL526324"><span class="t-lotus">🪷</span><span class="t-num">KL526324</span></div>
+<div class="ticket" onclick="tog(this,'KL614272')" data-num="KL614272"><span class="t-lotus">🪷</span><span class="t-num">KL614272</span></div>
+<div class="ticket" onclick="tog(this,'KL267083')" data-num="KL267083"><span class="t-lotus">🪷</span><span class="t-num">KL267083</span></div>
+<div class="ticket" onclick="tog(this,'KL295425')" data-num="KL295425"><span class="t-lotus">🪷</span><span class="t-num">KL295425</span></div>
+<div class="ticket" onclick="tog(this,'KL779849')" data-num="KL779849"><span class="t-lotus">🪷</span><span class="t-num">KL779849</span></div>
+<div class="ticket" onclick="tog(this,'KL866255')" data-num="KL866255"><span class="t-lotus">🪷</span><span class="t-num">KL866255</span></div>
+<div class="ticket" onclick="tog(this,'KL733393')" data-num="KL733393"><span class="t-lotus">🪷</span><span class="t-num">KL733393</span></div>
+<div class="ticket" onclick="tog(this,'KL539300')" data-num="KL539300"><span class="t-lotus">🪷</span><span class="t-num">KL539300</span></div>
+<div class="ticket" onclick="tog(this,'KL535058')" data-num="KL535058"><span class="t-lotus">🪷</span><span class="t-num">KL535058</span></div>
+<div class="ticket" onclick="tog(this,'KL963831')" data-num="KL963831"><span class="t-lotus">🪷</span><span class="t-num">KL963831</span></div>
+<div class="ticket" onclick="tog(this,'KL405610')" data-num="KL405610"><span class="t-lotus">🪷</span><span class="t-num">KL405610</span></div>
+<div class="ticket" onclick="tog(this,'KL510246')" data-num="KL510246"><span class="t-lotus">🪷</span><span class="t-num">KL510246</span></div>
+<div class="ticket" onclick="tog(this,'KL539306')" data-num="KL539306"><span class="t-lotus">🪷</span><span class="t-num">KL539306</span></div>
+<div class="ticket" onclick="tog(this,'KL103215')" data-num="KL103215"><span class="t-lotus">🪷</span><span class="t-num">KL103215</span></div>
+<div class="ticket" onclick="tog(this,'KL011078')" data-num="KL011078"><span class="t-lotus">🪷</span><span class="t-num">KL011078</span></div>
+<div class="ticket" onclick="tog(this,'KL082922')" data-num="KL082922"><span class="t-lotus">🪷</span><span class="t-num">KL082922</span></div>
+<div class="ticket" onclick="tog(this,'KL957705')" data-num="KL957705"><span class="t-lotus">🪷</span><span class="t-num">KL957705</span></div>
+<div class="ticket" onclick="tog(this,'KL957045')" data-num="KL957045"><span class="t-lotus">🪷</span><span class="t-num">KL957045</span></div>
+<div class="ticket" onclick="tog(this,'KL953047')" data-num="KL953047"><span class="t-lotus">🪷</span><span class="t-num">KL953047</span></div>
+<div class="ticket" onclick="tog(this,'KL584336')" data-num="KL584336"><span class="t-lotus">🪷</span><span class="t-num">KL584336</span></div>
+<div class="ticket" onclick="tog(this,'KL031087')" data-num="KL031087"><span class="t-lotus">🪷</span><span class="t-num">KL031087</span></div>
+<div class="ticket" onclick="tog(this,'KL477658')" data-num="KL477658"><span class="t-lotus">🪷</span><span class="t-num">KL477658</span></div>
+<div class="ticket" onclick="tog(this,'KL102315')" data-num="KL102315"><span class="t-lotus">🪷</span><span class="t-num">KL102315</span></div>
+<div class="ticket" onclick="tog(this,'KL585144')" data-num="KL585144"><span class="t-lotus">🪷</span><span class="t-num">KL585144</span></div>
+<div class="ticket" onclick="tog(this,'KL031101')" data-num="KL031101"><span class="t-lotus">🪷</span><span class="t-num">KL031101</span></div>
+<div class="ticket" onclick="tog(this,'KL457732')" data-num="KL457732"><span class="t-lotus">🪷</span><span class="t-num">KL457732</span></div>
+<div class="ticket" onclick="tog(this,'KL039132')" data-num="KL039132"><span class="t-lotus">🪷</span><span class="t-num">KL039132</span></div>
+<div class="ticket" onclick="tog(this,'KL082423')" data-num="KL082423"><span class="t-lotus">🪷</span><span class="t-num">KL082423</span></div>
+<div class="ticket" onclick="tog(this,'KL199264')" data-num="KL199264"><span class="t-lotus">🪷</span><span class="t-num">KL199264</span></div>
+<div class="ticket" onclick="tog(this,'KL394008')" data-num="KL394008"><span class="t-lotus">🪷</span><span class="t-num">KL394008</span></div>
+<div class="ticket" onclick="tog(this,'KL558719')" data-num="KL558719"><span class="t-lotus">🪷</span><span class="t-num">KL558719</span></div>
+<div class="ticket" onclick="tog(this,'KL758282')" data-num="KL758282"><span class="t-lotus">🪷</span><span class="t-num">KL758282</span></div>
+<div class="ticket" onclick="tog(this,'KL069636')" data-num="KL069636"><span class="t-lotus">🪷</span><span class="t-num">KL069636</span></div>
+<div class="ticket" onclick="tog(this,'KL881531')" data-num="KL881531"><span class="t-lotus">🪷</span><span class="t-num">KL881531</span></div>
+<div class="ticket" onclick="tog(this,'KL711816')" data-num="KL711816"><span class="t-lotus">🪷</span><span class="t-num">KL711816</span></div>
+<div class="ticket" onclick="tog(this,'KL552159')" data-num="KL552159"><span class="t-lotus">🪷</span><span class="t-num">KL552159</span></div>
+<div class="ticket" onclick="tog(this,'KL741924')" data-num="KL741924"><span class="t-lotus">🪷</span><span class="t-num">KL741924</span></div>
+<div class="ticket" onclick="tog(this,'KL059355')" data-num="KL059355"><span class="t-lotus">🪷</span><span class="t-num">KL059355</span></div>
+<div class="ticket" onclick="tog(this,'KL915333')" data-num="KL915333"><span class="t-lotus">🪷</span><span class="t-num">KL915333</span></div>
+<div class="ticket" onclick="tog(this,'KL066941')" data-num="KL066941"><span class="t-lotus">🪷</span><span class="t-num">KL066941</span></div>
+<div class="ticket" onclick="tog(this,'KL578328')" data-num="KL578328"><span class="t-lotus">🪷</span><span class="t-num">KL578328</span></div>
+<div class="ticket" onclick="tog(this,'KL407344')" data-num="KL407344"><span class="t-lotus">🪷</span><span class="t-num">KL407344</span></div>
+<div class="ticket" onclick="tog(this,'KL499145')" data-num="KL499145"><span class="t-lotus">🪷</span><span class="t-num">KL499145</span></div>
+<div class="ticket" onclick="tog(this,'KL947654')" data-num="KL947654"><span class="t-lotus">🪷</span><span class="t-num">KL947654</span></div>
+<div class="ticket" onclick="tog(this,'KL102554')" data-num="KL102554"><span class="t-lotus">🪷</span><span class="t-num">KL102554</span></div>
+<div class="ticket" onclick="tog(this,'KL021034')" data-num="KL021034"><span class="t-lotus">🪷</span><span class="t-num">KL021034</span></div>
+<div class="ticket" onclick="tog(this,'KL556838')" data-num="KL556838"><span class="t-lotus">🪷</span><span class="t-num">KL556838</span></div>
+<div class="ticket" onclick="tog(this,'KL553937')" data-num="KL553937"><span class="t-lotus">🪷</span><span class="t-num">KL553937</span></div>
+<div class="ticket" onclick="tog(this,'KL354338')" data-num="KL354338"><span class="t-lotus">🪷</span><span class="t-num">KL354338</span></div>
+<div class="ticket" onclick="tog(this,'KL499289')" data-num="KL499289"><span class="t-lotus">🪷</span><span class="t-num">KL499289</span></div>
+<div class="ticket" onclick="tog(this,'KL086222')" data-num="KL086222"><span class="t-lotus">🪷</span><span class="t-num">KL086222</span></div>
+<div class="ticket" onclick="tog(this,'KL361983')" data-num="KL361983"><span class="t-lotus">🪷</span><span class="t-num">KL361983</span></div>
+<div class="ticket" onclick="tog(this,'KL539286')" data-num="KL539286"><span class="t-lotus">🪷</span><span class="t-num">KL539286</span></div>
+<div class="ticket" onclick="tog(this,'KL394007')" data-num="KL394007"><span class="t-lotus">🪷</span><span class="t-num">KL394007</span></div>
+<div class="ticket" onclick="tog(this,'KL795828')" data-num="KL795828"><span class="t-lotus">🪷</span><span class="t-num">KL795828</span></div>
+<div class="ticket" onclick="tog(this,'KL069634')" data-num="KL069634"><span class="t-lotus">🪷</span><span class="t-num">KL069634</span></div>
+<div class="ticket" onclick="tog(this,'KL762409')" data-num="KL762409"><span class="t-lotus">🪷</span><span class="t-num">KL762409</span></div>
+<div class="ticket" onclick="tog(this,'KL813008')" data-num="KL813008"><span class="t-lotus">🪷</span><span class="t-num">KL813008</span></div>
+<div class="ticket" onclick="tog(this,'KL358104')" data-num="KL358104"><span class="t-lotus">🪷</span><span class="t-num">KL358104</span></div>
+<div class="ticket" onclick="tog(this,'KL538712')" data-num="KL538712"><span class="t-lotus">🪷</span><span class="t-num">KL538712</span></div>
+<div class="ticket" onclick="tog(this,'KL585283')" data-num="KL585283"><span class="t-lotus">🪷</span><span class="t-num">KL585283</span></div>
+<div class="ticket" onclick="tog(this,'KL133288')" data-num="KL133288"><span class="t-lotus">🪷</span><span class="t-num">KL133288</span></div>
+<div class="ticket" onclick="tog(this,'KL019178')" data-num="KL019178"><span class="t-lotus">🪷</span><span class="t-num">KL019178</span></div>
+<div class="ticket" onclick="tog(this,'KL485129')" data-num="KL485129"><span class="t-lotus">🪷</span><span class="t-num">KL485129</span></div>
+<div class="ticket" onclick="tog(this,'KL551365')" data-num="KL551365"><span class="t-lotus">🪷</span><span class="t-num">KL551365</span></div>
+<div class="ticket" onclick="tog(this,'KL018003')" data-num="KL018003"><span class="t-lotus">🪷</span><span class="t-num">KL018003</span></div>
+<div class="ticket" onclick="tog(this,'KL472543')" data-num="KL472543"><span class="t-lotus">🪷</span><span class="t-num">KL472543</span></div>
+<div class="ticket" onclick="tog(this,'KL258980')" data-num="KL258980"><span class="t-lotus">🪷</span><span class="t-num">KL258980</span></div>
+<div class="ticket" onclick="tog(this,'KL555240')" data-num="KL555240"><span class="t-lotus">🪷</span><span class="t-num">KL555240</span></div>
+<div class="ticket" onclick="tog(this,'KL521798')" data-num="KL521798"><span class="t-lotus">🪷</span><span class="t-num">KL521798</span></div>
+<div class="ticket" onclick="tog(this,'KL154367')" data-num="KL154367"><span class="t-lotus">🪷</span><span class="t-num">KL154367</span></div>
+<div class="ticket" onclick="tog(this,'KL010433')" data-num="KL010433"><span class="t-lotus">🪷</span><span class="t-num">KL010433</span></div>
+<div class="ticket" onclick="tog(this,'KL361982')" data-num="KL361982"><span class="t-lotus">🪷</span><span class="t-num">KL361982</span></div>
+<div class="ticket" onclick="tog(this,'KL634158')" data-num="KL634158"><span class="t-lotus">🪷</span><span class="t-num">KL634158</span></div>
+<div class="ticket" onclick="tog(this,'KL613215')" data-num="KL613215"><span class="t-lotus">🪷</span><span class="t-num">KL613215</span></div>
+<div class="ticket" onclick="tog(this,'KL563331')" data-num="KL563331"><span class="t-lotus">🪷</span><span class="t-num">KL563331</span></div>
+<div class="ticket" onclick="tog(this,'KL947737')" data-num="KL947737"><span class="t-lotus">🪷</span><span class="t-num">KL947737</span></div>
+<div class="ticket" onclick="tog(this,'KL040333')" data-num="KL040333"><span class="t-lotus">🪷</span><span class="t-num">KL040333</span></div>
+<div class="ticket" onclick="tog(this,'KL173463')" data-num="KL173463"><span class="t-lotus">🪷</span><span class="t-num">KL173463</span></div>
+<div class="ticket" onclick="tog(this,'KL635378')" data-num="KL635378"><span class="t-lotus">🪷</span><span class="t-num">KL635378</span></div>
+<div class="ticket" onclick="tog(this,'KL394181')" data-num="KL394181"><span class="t-lotus">🪷</span><span class="t-num">KL394181</span></div>
+<div class="ticket" onclick="tog(this,'KL933251')" data-num="KL933251"><span class="t-lotus">🪷</span><span class="t-num">KL933251</span></div>
+<div class="ticket" onclick="tog(this,'KL417346')" data-num="KL417346"><span class="t-lotus">🪷</span><span class="t-num">KL417346</span></div>
+<div class="ticket" onclick="tog(this,'KL309256')" data-num="KL309256"><span class="t-lotus">🪷</span><span class="t-num">KL309256</span></div>
+<div class="ticket" onclick="tog(this,'KL879531')" data-num="KL879531"><span class="t-lotus">🪷</span><span class="t-num">KL879531</span></div>
+<div class="ticket" onclick="tog(this,'KL986991')" data-num="KL986991"><span class="t-lotus">🪷</span><span class="t-num">KL986991</span></div>
+<div class="ticket" onclick="tog(this,'KL741925')" data-num="KL741925"><span class="t-lotus">🪷</span><span class="t-num">KL741925</span></div>
+<div class="ticket" onclick="tog(this,'KL717545')" data-num="KL717545"><span class="t-lotus">🪷</span><span class="t-num">KL717545</span></div>
+<div class="ticket" onclick="tog(this,'KL302334')" data-num="KL302334"><span class="t-lotus">🪷</span><span class="t-num">KL302334</span></div>
+<div class="ticket" onclick="tog(this,'KL361985')" data-num="KL361985"><span class="t-lotus">🪷</span><span class="t-num">KL361985</span></div>
+<div class="ticket" onclick="tog(this,'KL065416')" data-num="KL065416"><span class="t-lotus">🪷</span><span class="t-num">KL065416</span></div>
+<div class="ticket" onclick="tog(this,'KL971936')" data-num="KL971936"><span class="t-lotus">🪷</span><span class="t-num">KL971936</span></div>
+<div class="ticket" onclick="tog(this,'KL086632')" data-num="KL086632"><span class="t-lotus">🪷</span><span class="t-num">KL086632</span></div>
+<div class="ticket" onclick="tog(this,'KL173466')" data-num="KL173466"><span class="t-lotus">🪷</span><span class="t-num">KL173466</span></div>
+<div class="ticket" onclick="tog(this,'KL721375')" data-num="KL721375"><span class="t-lotus">🪷</span><span class="t-num">KL721375</span></div>
+<div class="ticket" onclick="tog(this,'KL987245')" data-num="KL987245"><span class="t-lotus">🪷</span><span class="t-num">KL987245</span></div>
+<div class="ticket" onclick="tog(this,'KL195325')" data-num="KL195325"><span class="t-lotus">🪷</span><span class="t-num">KL195325</span></div>
+<div class="ticket" onclick="tog(this,'KL897248')" data-num="KL897248"><span class="t-lotus">🪷</span><span class="t-num">KL897248</span></div>
+<div class="ticket" onclick="tog(this,'KL251585')" data-num="KL251585"><span class="t-lotus">🪷</span><span class="t-num">KL251585</span></div>
+<div class="ticket" onclick="tog(this,'KL171371')" data-num="KL171371"><span class="t-lotus">🪷</span><span class="t-num">KL171371</span></div>
+<div class="ticket" onclick="tog(this,'KL103827')" data-num="KL103827"><span class="t-lotus">🪷</span><span class="t-num">KL103827</span></div>
+<div class="ticket" onclick="tog(this,'KL205827')" data-num="KL205827"><span class="t-lotus">🪷</span><span class="t-num">KL205827</span></div>
+<div class="ticket" onclick="tog(this,'KL456190')" data-num="KL456190"><span class="t-lotus">🪷</span><span class="t-num">KL456190</span></div>
+<div class="ticket" onclick="tog(this,'KL538576')" data-num="KL538576"><span class="t-lotus">🪷</span><span class="t-num">KL538576</span></div>
+<div class="ticket" onclick="tog(this,'KL829723')" data-num="KL829723"><span class="t-lotus">🪷</span><span class="t-num">KL829723</span></div>
+<div class="ticket" onclick="tog(this,'KL204815')" data-num="KL204815"><span class="t-lotus">🪷</span><span class="t-num">KL204815</span></div>
+<div class="ticket" onclick="tog(this,'KL231492')" data-num="KL231492"><span class="t-lotus">🪷</span><span class="t-num">KL231492</span></div>
+<div class="ticket" onclick="tog(this,'KL708641')" data-num="KL708641"><span class="t-lotus">🪷</span><span class="t-num">KL708641</span></div>
+<div class="ticket" onclick="tog(this,'KL592546')" data-num="KL592546"><span class="t-lotus">🪷</span><span class="t-num">KL592546</span></div>
+<div class="ticket" onclick="tog(this,'KL305178')" data-num="KL305178"><span class="t-lotus">🪷</span><span class="t-num">KL305178</span></div>
+<div class="ticket" onclick="tog(this,'KL601942')" data-num="KL601942"><span class="t-lotus">🪷</span><span class="t-num">KL601942</span></div>
+<div class="ticket" onclick="tog(this,'KL971806')" data-num="KL971806"><span class="t-lotus">🪷</span><span class="t-num">KL971806</span></div>
+<div class="ticket" onclick="tog(this,'KL254619')" data-num="KL254619"><span class="t-lotus">🪷</span><span class="t-num">KL254619</span></div>
+<div class="ticket" onclick="tog(this,'KL681320')" data-num="KL681320"><span class="t-lotus">🪷</span><span class="t-num">KL681320</span></div>
+<div class="ticket" onclick="tog(this,'KL407395')" data-num="KL407395"><span class="t-lotus">🪷</span><span class="t-num">KL407395</span></div>
+<div class="ticket" onclick="tog(this,'KL631725')" data-num="KL631725"><span class="t-lotus">🪷</span><span class="t-num">KL631725</span></div>
+<div class="ticket" onclick="tog(this,'KL681372')" data-num="KL681372"><span class="t-lotus">🪷</span><span class="t-num">KL681372</span></div>
+<div class="ticket" onclick="tog(this,'KL695210')" data-num="KL695210"><span class="t-lotus">🪷</span><span class="t-num">KL695210</span></div>
+<div class="ticket" onclick="tog(this,'KL109578')" data-num="KL109578"><span class="t-lotus">🪷</span><span class="t-num">KL109578</span></div>
+<div class="ticket" onclick="tog(this,'KL513947')" data-num="KL513947"><span class="t-lotus">🪷</span><span class="t-num">KL513947</span></div>
+<div class="ticket" onclick="tog(this,'KL789523')" data-num="KL789523"><span class="t-lotus">🪷</span><span class="t-num">KL789523</span></div>
+<div class="ticket" onclick="tog(this,'KL542980')" data-num="KL542980"><span class="t-lotus">🪷</span><span class="t-num">KL542980</span></div>
+<div class="ticket" onclick="tog(this,'KL101299')" data-num="KL101299"><span class="t-lotus">🪷</span><span class="t-num">KL101299</span></div>
+<div class="ticket" onclick="tog(this,'KL512907')" data-num="KL512907"><span class="t-lotus">🪷</span><span class="t-num">KL512907</span></div>
+<div class="ticket" onclick="tog(this,'KL267658')" data-num="KL267658"><span class="t-lotus">🪷</span><span class="t-num">KL267658</span></div>
+<div class="ticket" onclick="tog(this,'KL705178')" data-num="KL705178"><span class="t-lotus">🪷</span><span class="t-num">KL705178</span></div>
+<div class="ticket" onclick="tog(this,'KL275232')" data-num="KL275232"><span class="t-lotus">🪷</span><span class="t-num">KL275232</span></div>
+<div class="ticket" onclick="tog(this,'KL282813')" data-num="KL282813"><span class="t-lotus">🪷</span><span class="t-num">KL282813</span></div>
+<div class="ticket" onclick="tog(this,'KL323510')" data-num="KL323510"><span class="t-lotus">🪷</span><span class="t-num">KL323510</span></div>
+<div class="ticket" onclick="tog(this,'KL579462')" data-num="KL579462"><span class="t-lotus">🪷</span><span class="t-num">KL579462</span></div>
+<div class="ticket" onclick="tog(this,'KL208627')" data-num="KL208627"><span class="t-lotus">🪷</span><span class="t-num">KL208627</span></div>
+<div class="ticket" onclick="tog(this,'KL175920')" data-num="KL175920"><span class="t-lotus">🪷</span><span class="t-num">KL175920</span></div>
+<div class="ticket" onclick="tog(this,'KL175929')" data-num="KL175929"><span class="t-lotus">🪷</span><span class="t-num">KL175929</span></div>
+<div class="ticket" onclick="tog(this,'KL226430')" data-num="KL226430"><span class="t-lotus">🪷</span><span class="t-num">KL226430</span></div>
+<div class="ticket" onclick="tog(this,'KL649230')" data-num="KL649230"><span class="t-lotus">🪷</span><span class="t-num">KL649230</span></div>
+<div class="ticket" onclick="tog(this,'KL894178')" data-num="KL894178"><span class="t-lotus">🪷</span><span class="t-num">KL894178</span></div>
+<div class="ticket" onclick="tog(this,'KL129423')" data-num="KL129423"><span class="t-lotus">🪷</span><span class="t-num">KL129423</span></div>
+<div class="ticket" onclick="tog(this,'KL108428')" data-num="KL108428"><span class="t-lotus">🪷</span><span class="t-num">KL108428</span></div>
+<div class="ticket" onclick="tog(this,'KL302619')" data-num="KL302619"><span class="t-lotus">🪷</span><span class="t-num">KL302619</span></div>
+<div class="ticket" onclick="tog(this,'KL101265')" data-num="KL101265"><span class="t-lotus">🪷</span><span class="t-num">KL101265</span></div>
+<div class="ticket" onclick="tog(this,'KL102340')" data-num="KL102340"><span class="t-lotus">🪷</span><span class="t-num">KL102340</span></div>
+<div class="ticket" onclick="tog(this,'KL172866')" data-num="KL172866"><span class="t-lotus">🪷</span><span class="t-num">KL172866</span></div>
+<div class="ticket" onclick="tog(this,'KL272899')" data-num="KL272899"><span class="t-lotus">🪷</span><span class="t-num">KL272899</span></div>
+<div class="ticket" onclick="tog(this,'KL281362')" data-num="KL281362"><span class="t-lotus">🪷</span><span class="t-num">KL281362</span></div>
+<div class="ticket" onclick="tog(this,'KL162510')" data-num="KL162510"><span class="t-lotus">🪷</span><span class="t-num">KL162510</span></div>
+<div class="ticket" onclick="tog(this,'KL290815')" data-num="KL290815"><span class="t-lotus">🪷</span><span class="t-num">KL290815</span></div>
+<div class="ticket" onclick="tog(this,'KL276501')" data-num="KL276501"><span class="t-lotus">🪷</span><span class="t-num">KL276501</span></div>
+<div class="ticket" onclick="tog(this,'KL540814')" data-num="KL540814"><span class="t-lotus">🪷</span><span class="t-num">KL540814</span></div>
+<div class="ticket" onclick="tog(this,'KL158279')" data-num="KL158279"><span class="t-lotus">🪷</span><span class="t-num">KL158279</span></div>
+<div class="ticket" onclick="tog(this,'KL203174')" data-num="KL203174"><span class="t-lotus">🪷</span><span class="t-num">KL203174</span></div>
+<div class="ticket" onclick="tog(this,'KL275501')" data-num="KL275501"><span class="t-lotus">🪷</span><span class="t-num">KL275501</span></div>
+<div class="ticket" onclick="tog(this,'KL307645')" data-num="KL307645"><span class="t-lotus">🪷</span><span class="t-num">KL307645</span></div>
+<div class="ticket" onclick="tog(this,'KL542378')" data-num="KL542378"><span class="t-lotus">🪷</span><span class="t-num">KL542378</span></div>
+<div class="ticket" onclick="tog(this,'KL224398')" data-num="KL224398"><span class="t-lotus">🪷</span><span class="t-num">KL224398</span></div>
+<div class="ticket" onclick="tog(this,'KL554870')" data-num="KL554870"><span class="t-lotus">🪷</span><span class="t-num">KL554870</span></div>
+<div class="ticket" onclick="tog(this,'KL579837')" data-num="KL579837"><span class="t-lotus">🪷</span><span class="t-num">KL579837</span></div>
+<div class="ticket" onclick="tog(this,'KL158319')" data-num="KL158319"><span class="t-lotus">🪷</span><span class="t-num">KL158319</span></div>
+<div class="ticket" onclick="tog(this,'KL717590')" data-num="KL717590"><span class="t-lotus">🪷</span><span class="t-num">KL717590</span></div>
+<div class="ticket" onclick="tog(this,'KL323783')" data-num="KL323783"><span class="t-lotus">🪷</span><span class="t-num">KL323783</span></div>
+<div class="ticket" onclick="tog(this,'KL294612')" data-num="KL294612"><span class="t-lotus">🪷</span><span class="t-num">KL294612</span></div>
+<div class="ticket" onclick="tog(this,'KL359998')" data-num="KL359998"><span class="t-lotus">🪷</span><span class="t-num">KL359998</span></div>
+<div class="ticket" onclick="tog(this,'KL579612')" data-num="KL579612"><span class="t-lotus">🪷</span><span class="t-num">KL579612</span></div>
+<div class="ticket" onclick="tog(this,'KL102617')" data-num="KL102617"><span class="t-lotus">🪷</span><span class="t-num">KL102617</span></div>
+<div class="ticket" onclick="tog(this,'KL585469')" data-num="KL585469"><span class="t-lotus">🪷</span><span class="t-num">KL585469</span></div>
+<div class="ticket" onclick="tog(this,'KL478789')" data-num="KL478789"><span class="t-lotus">🪷</span><span class="t-num">KL478789</span></div>
+<div class="ticket" onclick="tog(this,'KL610225')" data-num="KL610225"><span class="t-lotus">🪷</span><span class="t-num">KL610225</span></div>
+<div class="ticket" onclick="tog(this,'KL117586')" data-num="KL117586"><span class="t-lotus">🪷</span><span class="t-num">KL117586</span></div>
+<div class="ticket" onclick="tog(this,'KL320518')" data-num="KL320518"><span class="t-lotus">🪷</span><span class="t-num">KL320518</span></div>
+<div class="ticket" onclick="tog(this,'KL923834')" data-num="KL923834"><span class="t-lotus">🪷</span><span class="t-num">KL923834</span></div>
+<div class="ticket" onclick="tog(this,'KL118889')" data-num="KL118889"><span class="t-lotus">🪷</span><span class="t-num">KL118889</span></div>
+<div class="ticket" onclick="tog(this,'KL337903')" data-num="KL337903"><span class="t-lotus">🪷</span><span class="t-num">KL337903</span></div>
+<div class="ticket" onclick="tog(this,'KL272898')" data-num="KL272898"><span class="t-lotus">🪷</span><span class="t-num">KL272898</span></div>
+<div class="ticket" onclick="tog(this,'KL883682')" data-num="KL883682"><span class="t-lotus">🪷</span><span class="t-num">KL883682</span></div>
+<div class="ticket" onclick="tog(this,'KL509612')" data-num="KL509612"><span class="t-lotus">🪷</span><span class="t-num">KL509612</span></div>
+<div class="ticket" onclick="tog(this,'KL505612')" data-num="KL505612"><span class="t-lotus">🪷</span><span class="t-num">KL505612</span></div>
+<div class="ticket" onclick="tog(this,'KL578417')" data-num="KL578417"><span class="t-lotus">🪷</span><span class="t-num">KL578417</span></div>
+<div class="ticket" onclick="tog(this,'KL315937')" data-num="KL315937"><span class="t-lotus">🪷</span><span class="t-num">KL315937</span></div>
+<div class="ticket" onclick="tog(this,'KL805612')" data-num="KL805612"><span class="t-lotus">🪷</span><span class="t-num">KL805612</span></div>
+<div class="ticket" onclick="tog(this,'KL691724')" data-num="KL691724"><span class="t-lotus">🪷</span><span class="t-num">KL691724</span></div>
+<div class="ticket" onclick="tog(this,'KL298137')" data-num="KL298137"><span class="t-lotus">🪷</span><span class="t-num">KL298137</span></div>
+<div class="ticket" onclick="tog(this,'KL513050')" data-num="KL513050"><span class="t-lotus">🪷</span><span class="t-num">KL513050</span></div>
+<div class="ticket" onclick="tog(this,'KL621450')" data-num="KL621450"><span class="t-lotus">🪷</span><span class="t-num">KL621450</span></div>
+<div class="ticket" onclick="tog(this,'KL840265')" data-num="KL840265"><span class="t-lotus">🪷</span><span class="t-num">KL840265</span></div>
+<div class="ticket" onclick="tog(this,'KL760250')" data-num="KL760250"><span class="t-lotus">🪷</span><span class="t-num">KL760250</span></div>
+<div class="ticket" onclick="tog(this,'KL482360')" data-num="KL482360"><span class="t-lotus">🪷</span><span class="t-num">KL482360</span></div>
+<div class="ticket" onclick="tog(this,'KL380178')" data-num="KL380178"><span class="t-lotus">🪷</span><span class="t-num">KL380178</span></div>
+<div class="ticket" onclick="tog(this,'KL182936')" data-num="KL182936"><span class="t-lotus">🪷</span><span class="t-num">KL182936</span></div>
+<div class="ticket" onclick="tog(this,'KL398339')" data-num="KL398339"><span class="t-lotus">🪷</span><span class="t-num">KL398339</span></div>
+<div class="ticket" onclick="tog(this,'KL013720')" data-num="KL013720"><span class="t-lotus">🪷</span><span class="t-num">KL013720</span></div>
+<div class="ticket" onclick="tog(this,'KL231170')" data-num="KL231170"><span class="t-lotus">🪷</span><span class="t-num">KL231170</span></div>
+<div class="ticket" onclick="tog(this,'KL692738')" data-num="KL692738"><span class="t-lotus">🪷</span><span class="t-num">KL692738</span></div>
+<div class="ticket" onclick="tog(this,'KL267895')" data-num="KL267895"><span class="t-lotus">🪷</span><span class="t-num">KL267895</span></div>
+<div class="ticket" onclick="tog(this,'KL476199')" data-num="KL476199"><span class="t-lotus">🪷</span><span class="t-num">KL476199</span></div>
+<div class="ticket" onclick="tog(this,'KL507295')" data-num="KL507295"><span class="t-lotus">🪷</span><span class="t-num">KL507295</span></div>
+<div class="ticket" onclick="tog(this,'KL065993')" data-num="KL065993"><span class="t-lotus">🪷</span><span class="t-num">KL065993</span></div>
+<div class="ticket" onclick="tog(this,'KL568109')" data-num="KL568109"><span class="t-lotus">🪷</span><span class="t-num">KL568109</span></div>
+<div class="ticket" onclick="tog(this,'KL241929')" data-num="KL241929"><span class="t-lotus">🪷</span><span class="t-num">KL241929</span></div>
+<div class="ticket" onclick="tog(this,'KL538092')" data-num="KL538092"><span class="t-lotus">🪷</span><span class="t-num">KL538092</span></div>
+<div class="ticket" onclick="tog(this,'KL709418')" data-num="KL709418"><span class="t-lotus">🪷</span><span class="t-num">KL709418</span></div>
+<div class="ticket" onclick="tog(this,'KL568910')" data-num="KL568910"><span class="t-lotus">🪷</span><span class="t-num">KL568910</span></div>
+<div class="ticket" onclick="tog(this,'KL267854')" data-num="KL267854"><span class="t-lotus">🪷</span><span class="t-num">KL267854</span></div>
+<div class="ticket" onclick="tog(this,'KL695572')" data-num="KL695572"><span class="t-lotus">🪷</span><span class="t-num">KL695572</span></div>
+<div class="ticket" onclick="tog(this,'KL668091')" data-num="KL668091"><span class="t-lotus">🪷</span><span class="t-num">KL668091</span></div>
+<div class="ticket" onclick="tog(this,'KL118207')" data-num="KL118207"><span class="t-lotus">🪷</span><span class="t-num">KL118207</span></div>
+<div class="ticket" onclick="tog(this,'KL217065')" data-num="KL217065"><span class="t-lotus">🪷</span><span class="t-num">KL217065</span></div>
+<div class="ticket" onclick="tog(this,'KL241965')" data-num="KL241965"><span class="t-lotus">🪷</span><span class="t-num">KL241965</span></div>
+<div class="ticket" onclick="tog(this,'KL396320')" data-num="KL396320"><span class="t-lotus">🪷</span><span class="t-num">KL396320</span></div>
+<div class="ticket" onclick="tog(this,'KL100059')" data-num="KL100059"><span class="t-lotus">🪷</span><span class="t-num">KL100059</span></div>
+<div class="ticket" onclick="tog(this,'KL284610')" data-num="KL284610"><span class="t-lotus">🪷</span><span class="t-num">KL284610</span></div>
+<div class="ticket" onclick="tog(this,'KL241966')" data-num="KL241966"><span class="t-lotus">🪷</span><span class="t-num">KL241966</span></div>
+<div class="ticket" onclick="tog(this,'KL115782')" data-num="KL115782"><span class="t-lotus">🪷</span><span class="t-num">KL115782</span></div>
+<div class="ticket" onclick="tog(this,'KL152942')" data-num="KL152942"><span class="t-lotus">🪷</span><span class="t-num">KL152942</span></div>
+<div class="ticket" onclick="tog(this,'KL669470')" data-num="KL669470"><span class="t-lotus">🪷</span><span class="t-num">KL669470</span></div>
+<div class="ticket" onclick="tog(this,'KL642570')" data-num="KL642570"><span class="t-lotus">🪷</span><span class="t-num">KL642570</span></div>
+<div class="ticket" onclick="tog(this,'KL532942')" data-num="KL532942"><span class="t-lotus">🪷</span><span class="t-num">KL532942</span></div>
+<div class="ticket" onclick="tog(this,'KL217965')" data-num="KL217965"><span class="t-lotus">🪷</span><span class="t-num">KL217965</span></div>
+<div class="ticket" onclick="tog(this,'KL571850')" data-num="KL571850"><span class="t-lotus">🪷</span><span class="t-num">KL571850</span></div>
+<div class="ticket" onclick="tog(this,'KL345810')" data-num="KL345810"><span class="t-lotus">🪷</span><span class="t-num">KL345810</span></div>
+<div class="ticket" onclick="tog(this,'KL144613')" data-num="KL144613"><span class="t-lotus">🪷</span><span class="t-num">KL144613</span></div>
+<div class="ticket" onclick="tog(this,'KL278018')" data-num="KL278018"><span class="t-lotus">🪷</span><span class="t-num">KL278018</span></div>
+<div class="ticket" onclick="tog(this,'KL784610')" data-num="KL784610"><span class="t-lotus">🪷</span><span class="t-num">KL784610</span></div>
+<div class="ticket" onclick="tog(this,'KL602529')" data-num="KL602529"><span class="t-lotus">🪷</span><span class="t-num">KL602529</span></div>
+<div class="ticket" onclick="tog(this,'KL922267')" data-num="KL922267"><span class="t-lotus">🪷</span><span class="t-num">KL922267</span></div>
+<div class="ticket" onclick="tog(this,'KL418974')" data-num="KL418974"><span class="t-lotus">🪷</span><span class="t-num">KL418974</span></div>
+<div class="ticket" onclick="tog(this,'KL968263')" data-num="KL968263"><span class="t-lotus">🪷</span><span class="t-num">KL968263</span></div>
+<div class="ticket" onclick="tog(this,'KL371850')" data-num="KL371850"><span class="t-lotus">🪷</span><span class="t-num">KL371850</span></div>
+<div class="ticket" onclick="tog(this,'KL980176')" data-num="KL980176"><span class="t-lotus">🪷</span><span class="t-num">KL980176</span></div>
+<div class="ticket" onclick="tog(this,'KL108525')" data-num="KL108525"><span class="t-lotus">🪷</span><span class="t-num">KL108525</span></div>
+<div class="ticket" onclick="tog(this,'KL650789')" data-num="KL650789"><span class="t-lotus">🪷</span><span class="t-num">KL650789</span></div>
+<div class="ticket" onclick="tog(this,'KL898150')" data-num="KL898150"><span class="t-lotus">🪷</span><span class="t-num">KL898150</span></div>
+<div class="ticket" onclick="tog(this,'KL602329')" data-num="KL602329"><span class="t-lotus">🪷</span><span class="t-num">KL602329</span></div>
+<div class="ticket" onclick="tog(this,'KL903622')" data-num="KL903622"><span class="t-lotus">🪷</span><span class="t-num">KL903622</span></div>
+<div class="ticket" onclick="tog(this,'KL517234')" data-num="KL517234"><span class="t-lotus">🪷</span><span class="t-num">KL517234</span></div>
+<div class="ticket" onclick="tog(this,'KL207514')" data-num="KL207514"><span class="t-lotus">🪷</span><span class="t-num">KL207514</span></div>
+<div class="ticket" onclick="tog(this,'KL209556')" data-num="KL209556"><span class="t-lotus">🪷</span><span class="t-num">KL209556</span></div>
+<div class="ticket" onclick="tog(this,'KL413613')" data-num="KL413613"><span class="t-lotus">🪷</span><span class="t-num">KL413613</span></div>
+<div class="ticket" onclick="tog(this,'KL125867')" data-num="KL125867"><span class="t-lotus">🪷</span><span class="t-num">KL125867</span></div>
+<div class="ticket" onclick="tog(this,'KL124827')" data-num="KL124827"><span class="t-lotus">🪷</span><span class="t-num">KL124827</span></div>
+<div class="ticket" onclick="tog(this,'KL744772')" data-num="KL744772"><span class="t-lotus">🪷</span><span class="t-num">KL744772</span></div>
+<div class="ticket" onclick="tog(this,'KL385676')" data-num="KL385676"><span class="t-lotus">🪷</span><span class="t-num">KL385676</span></div>
+<div class="ticket" onclick="tog(this,'KL125879')" data-num="KL125879"><span class="t-lotus">🪷</span><span class="t-num">KL125879</span></div>
+<div class="ticket" onclick="tog(this,'KL899315')" data-num="KL899315"><span class="t-lotus">🪷</span><span class="t-num">KL899315</span></div>
+<div class="ticket" onclick="tog(this,'KL878310')" data-num="KL878310"><span class="t-lotus">🪷</span><span class="t-num">KL878310</span></div>
+<div class="ticket" onclick="tog(this,'KL504710')" data-num="KL504710"><span class="t-lotus">🪷</span><span class="t-num">KL504710</span></div>
+<div class="ticket" onclick="tog(this,'KL333167')" data-num="KL333167"><span class="t-lotus">🪷</span><span class="t-num">KL333167</span></div>
+<div class="ticket" onclick="tog(this,'KL100019')" data-num="KL100019"><span class="t-lotus">🪷</span><span class="t-num">KL100019</span></div>
+<div class="ticket" onclick="tog(this,'KL284927')" data-num="KL284927"><span class="t-lotus">🪷</span><span class="t-num">KL284927</span></div>
+<div class="ticket" onclick="tog(this,'KL227836')" data-num="KL227836"><span class="t-lotus">🪷</span><span class="t-num">KL227836</span></div>
+<div class="ticket" onclick="tog(this,'KL620329')" data-num="KL620329"><span class="t-lotus">🪷</span><span class="t-num">KL620329</span></div>
+<div class="ticket" onclick="tog(this,'KL980329')" data-num="KL980329"><span class="t-lotus">🪷</span><span class="t-num">KL980329</span></div>
+<div class="ticket" onclick="tog(this,'KL980776')" data-num="KL980776"><span class="t-lotus">🪷</span><span class="t-num">KL980776</span></div>
+<div class="ticket" onclick="tog(this,'KL215010')" data-num="KL215010"><span class="t-lotus">🪷</span><span class="t-num">KL215010</span></div>
+<div class="ticket" onclick="tog(this,'KL126570')" data-num="KL126570"><span class="t-lotus">🪷</span><span class="t-num">KL126570</span></div>
+<div class="ticket" onclick="tog(this,'KL858863')" data-num="KL858863"><span class="t-lotus">🪷</span><span class="t-num">KL858863</span></div>
+<div class="ticket" onclick="tog(this,'KL100012')" data-num="KL100012"><span class="t-lotus">🪷</span><span class="t-num">KL100012</span></div>
+<div class="ticket" onclick="tog(this,'KL130411')" data-num="KL130411"><span class="t-lotus">🪷</span><span class="t-num">KL130411</span></div>
+<div class="ticket" onclick="tog(this,'KL108986')" data-num="KL108986"><span class="t-lotus">🪷</span><span class="t-num">KL108986</span></div>
+<div class="ticket" onclick="tog(this,'KL301615')" data-num="KL301615"><span class="t-lotus">🪷</span><span class="t-num">KL301615</span></div>
+<div class="ticket" onclick="tog(this,'KL936174')" data-num="KL936174"><span class="t-lotus">🪷</span><span class="t-num">KL936174</span></div>
+<div class="ticket" onclick="tog(this,'KL313777')" data-num="KL313777"><span class="t-lotus">🪷</span><span class="t-num">KL313777</span></div>
+<div class="ticket" onclick="tog(this,'KL043177')" data-num="KL043177"><span class="t-lotus">🪷</span><span class="t-num">KL043177</span></div>
+<div class="ticket" onclick="tog(this,'KL007728')" data-num="KL007728"><span class="t-lotus">🪷</span><span class="t-num">KL007728</span></div>
+<div class="ticket" onclick="tog(this,'KL179269')" data-num="KL179269"><span class="t-lotus">🪷</span><span class="t-num">KL179269</span></div>
+<div class="ticket" onclick="tog(this,'KL285339')" data-num="KL285339"><span class="t-lotus">🪷</span><span class="t-num">KL285339</span></div>
+<div class="ticket" onclick="tog(this,'KL595708')" data-num="KL595708"><span class="t-lotus">🪷</span><span class="t-num">KL595708</span></div>
+<div class="ticket" onclick="tog(this,'KL460398')" data-num="KL460398"><span class="t-lotus">🪷</span><span class="t-num">KL460398</span></div>
+<div class="ticket" onclick="tog(this,'KL429687')" data-num="KL429687"><span class="t-lotus">🪷</span><span class="t-num">KL429687</span></div>
+<div class="ticket" onclick="tog(this,'KL276046')" data-num="KL276046"><span class="t-lotus">🪷</span><span class="t-num">KL276046</span></div>
+<div class="ticket" onclick="tog(this,'KL623395')" data-num="KL623395"><span class="t-lotus">🪷</span><span class="t-num">KL623395</span></div>
+<div class="ticket" onclick="tog(this,'KL439064')" data-num="KL439064"><span class="t-lotus">🪷</span><span class="t-num">KL439064</span></div>
+<div class="ticket" onclick="tog(this,'KL304853')" data-num="KL304853"><span class="t-lotus">🪷</span><span class="t-num">KL304853</span></div>
+<div class="ticket" onclick="tog(this,'KL984452')" data-num="KL984452"><span class="t-lotus">🪷</span><span class="t-num">KL984452</span></div>
+<div class="ticket" onclick="tog(this,'KL471471')" data-num="KL471471"><span class="t-lotus">🪷</span><span class="t-num">KL471471</span></div>
+<div class="ticket" onclick="tog(this,'KL864619')" data-num="KL864619"><span class="t-lotus">🪷</span><span class="t-num">KL864619</span></div>
+<div class="ticket" onclick="tog(this,'KL139636')" data-num="KL139636"><span class="t-lotus">🪷</span><span class="t-num">KL139636</span></div>
+<div class="ticket" onclick="tog(this,'KL968017')" data-num="KL968017"><span class="t-lotus">🪷</span><span class="t-num">KL968017</span></div>
+<div class="ticket" onclick="tog(this,'KL134214')" data-num="KL134214"><span class="t-lotus">🪷</span><span class="t-num">KL134214</span></div>
+<div class="ticket" onclick="tog(this,'KL359458')" data-num="KL359458"><span class="t-lotus">🪷</span><span class="t-num">KL359458</span></div>
+<div class="ticket" onclick="tog(this,'KL529855')" data-num="KL529855"><span class="t-lotus">🪷</span><span class="t-num">KL529855</span></div>
+
+    </div><!-- end ticket-grid -->
+
+    <div class="chips-area" id="chipsArea"></div>
+    <div class="min-warn" id="minWarn">⚠️ Kam se kam 3 ticket chunna zaroori hai!</div>
+  </div>
+
+  <!-- SUMMARY -->
+  <div class="summary-card">
+    <div class="sum-row">
+      <span class="s-label">Chunne gaye Tickets</span>
+      <span class="s-val" id="countDisplay">0</span>
+    </div>
+    <div class="sum-row">
+      <span class="s-label">Ek Ticket ki Kimat</span>
+      <span class="s-val">₹40</span>
+    </div>
+    <div class="sum-row total-row">
+      <span class="s-label">💰 Kul Raqam</span>
+      <span class="s-val" id="totalDisplay">₹0</span>
+    </div>
+  </div>
+
+  <!-- WHATSAPP -->
+  <div class="wa-btn-wrap">
+    <button class="wa-btn" onclick="submitWA()">
+      <span class="wa-icon">📲</span>
+      WHATSAPP PAR BOOK KAREIN
+    </button>
+  </div>
+
+  <!-- TRUST -->
+  <div class="trust-row">
+    <div class="trust-item"><span class="ti-icon">🔒</span>Secure<br>Payment</div>
+    <div class="trust-item"><span class="ti-icon">🏛️</span>Sarkari<br>Authorized</div>
+    <div class="trust-item"><span class="ti-icon">⚡</span>Instant<br>Confirm</div>
+    <div class="trust-item"><span class="ti-icon">🎯</span>100%<br>Original</div>
+  </div>
+
+  <!-- PAYMENT -->
+  <div class="ornament-divider" style="margin:14px 0 8px"><span class="ornament-center">⬦ ✦ ⬦</span></div>
+  <div style="text-align:center;font-size:9px;letter-spacing:2px;color:var(--muted);margin-bottom:8px;text-transform:uppercase;">Payment Methods</div>
+  <div class="payment-row">
+    <div class="pay-badge">📱 GPay</div>
+    <div class="pay-badge">📲 PhonePe</div>
+    <div class="pay-badge">💳 Paytm</div>
+    <div class="pay-badge">🏦 UPI</div>
+  </div>
+
+  <!-- NOTICE -->
+  <div class="notice-box">
+    ⚠️ <strong>Zaruri Soochna:</strong> Minimum 3 Tickets book karna compulsory hai. Sirf VIP tickets available hain. Offer limited time ke liye hai. Draw ka result official Kerala Lottery website par dekha ja sakta hai.
+  </div>
+
+  <div class="footer">© 2026 Kerala State Lotteries Department · All Rights Reserved · Authorized Portal</div>
+</div>
+
+<script>
+var sel = {};
+var PRICE = 40;
+var MIN = 3;
+var WA_NUM = '919296845372';
+
+function tog(el, num) {
+  if (sel[num]) {
+    delete sel[num];
+    el.classList.remove('selected');
+  } else {
+    sel[num] = true;
+    el.classList.add('selected');
+    spawnParticles(el);
+  }
+  refresh();
+}
+
+function refresh() {
+  var keys = Object.keys(sel);
+  var n = keys.length;
+  document.getElementById('countDisplay').textContent = n;
+  document.getElementById('totalDisplay').textContent = '₹' + (n * PRICE).toLocaleString('en-IN');
+  document.getElementById('badgeSel').textContent = '✅ Chune: ' + n;
+  document.getElementById('minWarn').style.display = 'none';
+
+  var area = document.getElementById('chipsArea');
+  area.innerHTML = '';
+  for (var i = 0; i < keys.length; i++) {
+    var k = keys[i];
+    area.innerHTML += '<div class="chip">🪷 ' + k + ' <span class="chip-x" onclick="removeChip(\'' + k + '\')">✕</span></div>';
+  }
+}
+
+function removeChip(num) {
+  delete sel[num];
+  var el = document.querySelector('#ticketGrid .ticket[data-num="' + num + '"]');
+  if (el) el.classList.remove('selected');
+  refresh();
+}
+
+function filterTickets() {
+  var q = document.getElementById('searchBox').value.trim().toUpperCase();
+  var items = document.querySelectorAll('#ticketGrid .ticket');
+  var shown = 0;
+  for (var i = 0; i < items.length; i++) {
+    if (!q || items[i].dataset.num.indexOf(q) !== -1) {
+      items[i].classList.remove('hidden');
+      shown++;
+    } else {
+      items[i].classList.add('hidden');
+    }
+  }
+  document.getElementById('badgeTotal').textContent = '📋 Total: ' + shown;
+}
+
+// Timer
+var secs = 14 * 60 + 59;
+function tick() {
+  if (secs < 0) secs = 14 * 60 + 59;
+  var h = Math.floor(secs / 3600);
+  var m = Math.floor((secs % 3600) / 60);
+  var s = secs % 60;
+  document.getElementById('t-h').textContent = String(h).padStart(2,'0');
+  document.getElementById('t-m').textContent = String(m).padStart(2,'0');
+  document.getElementById('t-s').textContent = String(s).padStart(2,'0');
+  secs--;
+}
+tick(); setInterval(tick, 1000);
+
+// WhatsApp
+function submitWA() {
+  var keys = Object.keys(sel);
+  if (keys.length < MIN) {
+    var w = document.getElementById('minWarn');
+    w.style.display = 'block';
+    w.style.animation = 'none';
+    setTimeout(function() { w.style.animation = 'shake 0.4s ease'; }, 10);
+    return;
+  }
+  spawnConfetti();
+  var total = keys.length * PRICE;
+  var msg = encodeURIComponent(
+    '🏆 *KERALA GOVERNMENT LOTTERY BOOKING*\n\n' +
+    '🎟️ *Chunne gaye Tickets (' + keys.length + '):*\n' + keys.join('\n') + '\n\n' +
+    '💰 *Kul Raqam: ₹' + total.toLocaleString('en-IN') + '*\n\n' +
+    '⚡ Meri booking confirm karein!'
+  );
+  setTimeout(function() {
+    window.open('https://wa.me/' + WA_NUM + '?text=' + msg, '_blank');
+  }, 600);
+}
+
+// Confetti
+function spawnConfetti() {
+  var c = document.getElementById('confetti');
+  var cols = ['#C9A84C','#FFE97F','#8B0000','#C41E3A','#fff','#F0D060'];
+  for (var i = 0; i < 60; i++) {
+    var p = document.createElement('div');
+    var col = cols[Math.floor(Math.random() * cols.length)];
+    var w = 4 + Math.random() * 7;
+    p.style.cssText = 'position:fixed;left:' + (Math.random()*100) + '%;top:-10px;background:' + col + ';width:' + w + 'px;height:' + (w*1.5) + 'px;border-radius:2px;pointer-events:none;z-index:9999;animation:fall ' + (1.5+Math.random()*2) + 's ' + (Math.random()*0.5) + 's ease-in forwards;';
+    c.appendChild(p);
+    setTimeout(function(pp){ pp.remove(); }, 3500, p);
+  }
+}
+
+function spawnParticles(el) {
+  var rect = el.getBoundingClientRect();
+  var cx = rect.left + rect.width/2, cy = rect.top + rect.height/2;
+  var c = document.getElementById('confetti');
+  for (var i = 0; i < 7; i++) {
+    var p = document.createElement('div');
+    var angle = (i/7)*Math.PI*2, dist = 20 + Math.random()*18;
+    p.style.cssText = 'position:fixed;left:' + cx + 'px;top:' + cy + 'px;width:5px;height:5px;border-radius:50%;background:#C9A84C;pointer-events:none;z-index:9999;transition:all 0.4s ease-out;opacity:1;';
+    c.appendChild(p);
+    (function(pp, a, d) {
+      setTimeout(function() {
+        pp.style.transform = 'translate(' + (Math.cos(a)*d) + 'px,' + (Math.sin(a)*d) + 'px)';
+        pp.style.opacity = '0';
+      }, 10);
+      setTimeout(function() { pp.remove(); }, 500);
+    })(p, angle, dist);
+  }
+}
+</script>
+</body>
+</html>
